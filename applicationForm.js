@@ -90,11 +90,11 @@ function workProof(id, no = false) {
 function backgroundCheck(id, no = false) {
     const section = document.getElementById(id);
     // if yes and section exists, do nothing
-    if(!no && section) return;
+    if (!no && section) return;
     // if no
-    if(no) {
+    if (no) {
         // if section exists, remove content
-        if(section) $('#'+id).remove();
+        if (section) $('#' + id).remove();
         return;
     }
 
@@ -111,7 +111,7 @@ function backgroundCheck(id, no = false) {
 
 
     // add to parent id
-    $('#'+id+'Check').append(check);
+    $('#' + id + 'Check').append(check);
 }
 
 
@@ -284,120 +284,121 @@ function AddWorkExperience() {
         return;
     }
     // add more work experience
-    const workExperience = `<hr className="workExperience-divider">
-            <div id="workexperience2" className="workexperience">
+    const workExperience = `<hr class="workExperience-divider">
+            <div id="workexperience1" class="workexperience">
                 <p><b>Employer #` + nextNum + `</b></p>
-                <div className="row g-3">
-                    <div className="col-sm-6">
-                        <label htmlFor="firstEmployeeName" className="form-label">Employee Name</label>
-                        <input type="text" className="form-control" id="firstEmployeeName" placeholder="" value=""
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label For="firstEmployeeName" class="form-label">Employee Name</label>
+                        <input type="text" class="form-control" id="firstEmployeeName" placeholder="" value=""
                                required="">
-                            <div className="invalid-feedback">
+                            <div class="invalid-feedback">
                                 Valid employee name is required.
                             </div>
                     </div>
-                    <div className="col-md-6">
-                        <label htmlFor="firstEmployeePhone" className="form-label">Phone Number</label>
-                        <input type="text" className="form-control" id="firstEmployeePhone" placeholder="" required="">
-                            <div className="invalid-feedback">
+                    <div class="col-md-6">
+                        <label For="firstEmployeePhone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="firstEmployeePhone" placeholder="" required="">
+                            <div class="invalid-feedback">
                                 Phone number is required.
                             </div>
                     </div>
-                    <div className="col-sm-12">
-                        <label htmlFor="firstEmployeeAddress" className="form-label">Street Address</label>
-                        <input type="text" className="form-control" id="firstEmployeeAddress" placeholder="" value=""
+                    <div class="col-sm-12">
+                        <label For="firstEmployeeAddress" class="form-label">Street Address</label>
+                        <input type="text" class="form-control" id="firstEmployeeAddress" placeholder="" value=""
                                required="">
-                            <div className="invalid-feedback">
+                            <div class="invalid-feedback">
                                 Street Address is required.
                             </div>
                     </div>
                     <!--                                city/state/zip-->
-                    <div className="col-md-4">
-                        <label htmlFor="city" className="form-label">City</label>
-                        <input type="text" className="form-control" id="firstEmployeecity" placeholder="" required="">
-                            <div className="invalid-feedback">
+                    <div class="col-md-4">
+                        <label For="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="firstEmployeecity" placeholder="" required="">
+                            <div class="invalid-feedback">
                                 City is required.
                             </div>
                     </div>
-                    <div className="col-md-3">
-                        <label htmlFor="firstEmployeeState" className="form-label">State</label>
-                        <select className="form-select" id="firstEmployeeState" required="">
+                    <div class="col-md-3">
+                        <label For="firstEmployeeState" class="form-label">State</label>
+                        <select class="form-select" id="firstEmployeeState" required="">
                             <option value="">Choose...</option>
                             <option>California</option>
                         </select>
-                        <div className="invalid-feedback">
+                        <div class="invalid-feedback">
                             Please provide a valid state.
                         </div>
                     </div>
-                    <div className="col-md-2">
-                        <label htmlFor="firstEmployeeZip" className="form-label">Zip</label>
-                        <input type="text" className="form-control" id="firstEmployeeZip" placeholder="" required="">
-                            <div className="invalid-feedback">
+                    <div class="col-md-2">
+                        <label For="firstEmployeeZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="firstEmployeeZip" placeholder="" required="">
+                            <div class="invalid-feedback">
                                 Zip code required.
                             </div>
                     </div>
-                    <div className="col-md-3">
-                        <label htmlFor="firstEmployeeCountry" className="form-label">Country</label>
-                        <select className="form-select" id="firstEmployeeCountry" required="">
+                    <div class="col-md-3">
+                        <label For="firstEmployeeCountry" class="form-label">Country</label>
+                        <select class="form-select" id="firstEmployeeCountry" required="">
                             <option value="">Choose...</option>
                             <option>United States</option>
                         </select>
-                        <div className="invalid-feedback">
+                        <div class="invalid-feedback">
                             Please select a valid country.
                         </div>
                     </div>
-                    <div className="col-md-6">
-                        <label htmlFor="firstEmployeePosition" className="form-label">Position</label>
-                        <input type="text" className="form-control" id="firstEmployeePosition" placeholder=""
+                    <div class="col-md-6">
+                        <label for="firstEmployeePosition" class="form-label">Position</label>
+                        <input type="text" class="form-control" id="firstEmployeePosition" placeholder=""
                                required="">
-                            <div className="invalid-feedback">
+                            <div class="invalid-feedback">
                                 Position is required.
                             </div>
                     </div>
-                    <div className="col-md-6">
-                        <label htmlFor="firstEmployeeSupervisor" className="form-label">Supervisor's Name and
+                    <div class="col-md-6">
+                        <label for="firstEmployeeSupervisor" class="form-label">Supervisor's Name and
                             Title</label>
-                        <input type="text" className="form-control" id="firstEmployeeSupervisor" placeholder=""
+                        <input type="text" class="form-control" id="firstEmployeeSupervisor" placeholder=""
                                required="">
-                            <div className="invalid-feedback">
+                            <div class="invalid-feedback">
                                 Supervisor's name and title are required.
                             </div>
                     </div>
-                    <div className="col-sm-6">
-                        <label htmlFor="firstEmployeeStartDate">Start Date</label>
-                        <input type="text" className="form-control picker__input" id="firstEmployeeStartDate"
+                    <div class="col-sm-6">
+                        <label for="firstEmployeeStartDate">Start Date</label>
+                        <input type="text" class="form-control picker__input" id="firstEmployeeStartDate"
                                readOnly="">
                     </div>
-                    <div className="col-sm-6">
-                        <label htmlFor="firstEmployeeEndDate">End Date</label>
-                        <input type="text" className="form-control picker__input" id="firstEmployeeEndDate"
+                    <div class="col-sm-6">
+                        <label for="firstEmployeeEndDate">End Date</label>
+                        <input type="text" class="form-control picker__input" id="firstEmployeeEndDate"
                                readOnly="">
                     </div>
 
                     <p>
                         May we contact this employer?
                         <a>
-                            <input className="form-check-input" type="radio" name="radio"
+                            <input class="form-check-input" type="radio" name="radio"
                                    id="yes_firstEmployeeRadio"></a>
-                        <label className="form-check-label" htmlFor="yes_firstEmployeeRadio">
+                        <label class="form-check-label" for="yes_firstEmployeeRadio">
                             Yes</label>
 
-                        <input className="form-check-input" type="radio" name="radio" id="no_firstEmployeeRadio">
-                            <label className="form-check-label" htmlFor="no_firstEmployeeRadio">
+                        <input class="form-check-input" type="radio" name="radio" id="no_firstEmployeeRadio">
+                            <label class="form-check-label" for="no_firstEmployeeRadio">
                                 No</label>
-                            <div className="col-md-6">
-                                <label htmlFor="firstEmployeeDuties" className="form-label">Specific Duties</label>
-                                <input type="text" className="form-control" id="firstEmployeeDuties" placeholder=""
+                                </p>
+                            <div class="col-md-6">
+                                <label for="firstEmployeeDuties" class="form-label">Specific Duties</label>
+                                <input type="text" class="form-control" id="firstEmployeeDuties" placeholder=""
                                        required="">
-                                    <div className="invalid-feedback">
+                                    <div class="invalid-feedback">
                                         Specific duties are required.
                                     </div>
                             </div>
-                            <div className="col-md-6">
-                                <label htmlFor="firstEmployeeReason" className="form-label">Reason For Leaving</label>
-                                <input type="text" className="form-control" id="firstEmployeeReason" placeholder=""
+                            <div class="col-md-6">
+                                <label for="firstEmployeeReason" class="form-label">Reason For Leaving</label>
+                                <input type="text" class="form-control" id="firstEmployeeReason" placeholder=""
                                        required="">
-                                    <div className="invalid-feedback">
+                                    <div class="invalid-feedback">
                                         Reason for leaving is required.
                                     </div>
                             </div>
