@@ -1,0 +1,39 @@
+// define all variable overrides
+$font-family: Verdana, sans-serif;
+
+
+// import all of bootstrap's styles
+@import 'bootstrap';
+
+
+// any specific override here
+header{
+  background-color: #d2a355;
+
+}
+
+.site-footer{
+  background-color: lighten(#d2a355 0.5);
+}
+
+.carousel-item {
+  width: auto;
+  height: 800px;
+}
+
+.d-flex {
+  float: right;
+  width: 30%;
+  padding-bottom: 10px;
+}
+
+.PD20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.tablecell {
+  width: 60px;
+}
+

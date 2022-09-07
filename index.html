@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Yellowstone National Park</title>
+    <!--    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/pricing/">-->
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+            integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+            crossorigin="anonymous"></script>
+    <!--    pickadate css-->
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="default.date.css">
+
+    <!--    header-->
+    <div class="sticky-top">
+
+        <header class="p-4">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-black" href="#">Yellowstone National Park</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Lodge</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Wildlife</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!--    slides-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="header.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="header2.jpg" class="d-block w-100" alt="..." width="100px" height="300px">
+            </div>
+            <div class="carousel-item">
+                <img src="header3.jpg" class="d-block w-100" alt="..." width="100px" height="300px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</head>
+<body>
+<div class="container">
+    <main>
+        <div class="py-5">
+            <h2 class="text-center">Application Form</h2>
+            <!--                Things to know before you start-->
+            <h3>Things to know *</h3>
+            <ul>
+                <li>
+                    <p>
+                        If you are an individual with disabilities who needs accommodation or you are having difficulty
+                        using our web site to apply for employment, please contact the Human Resources team at (307)
+                        344-5324.
+                    </p>
+                    <p>
+                        Xanterra Parks & Resorts (Authorized Concessioner of the National Park Service) is an equal
+                        opportunity employer and does not discriminate against any individual in any phase of employment
+                        on the basis of race, color, creed, religion, sexual orientation, national origin, ancestry,
+                        veteran status, age, disability or any other legally protected status under applicable law.
+                        AA/EOE M/F/D/V
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Have you already submitted one application for this season's employment? <b>If so, please DO NOT
+                        submit another application!</b> Doing so slows your application and review process down
+                        significantly and you may lose the opportunity to be considered for the job you really want!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>PLEASE DO NOT APPLY MORE THAN ONCE PER SEASON.</b> If you need to make ANY changes to your
+                        application for employment, please email us at <a href="#">info@yellowstonejobs.com</a>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A positive letter of recommendation is required and must be sent before you can begin
+                        employment. Send letter of recommendation to:
+
+                        Yellowstone National Park Lodges, Human Resource
+                        PO Box 165, YNP
+                        WY
+                        82190
+                        Telephone: (307) 344- 5324 &nbsp;&nbsp;&nbsp; FAX: (307) 344 - 5441 &nbsp;&nbsp;&nbsp;
+                        E-mail: info@yellowstonejobs.com
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Please note there're jobs require driver's license.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        You consent to a drug screen as a condition of employment.
+                    </p>
+                </li>
+            </ul>
+            <H5>
+                Before you start, please check:
+            </H5>
+            <ul>
+                <!--                    proof to work in U.S.-->
+                <li>
+                    <div id="workProof">
+                        <p>
+                            Can you provide proof that you are eligible to work in the United States?
+                            <input class="form-check-input" type="radio" name="radio" id="radio1"
+                                   onclick="workProof('work')">Yes
+                            <input class="form-check-input" type="radio" name="radio" id="radio2"
+                                   onclick="workProof('work', true)">No
+                        </p>
+                    </div>
+                </li>
+
+                <!--                    background check info-->
+                <li>
+                    <div id="backgroundCheck">
+                        <p>
+                            Have you ever been convicted of a felony (including any pleas of "guilty" or "no contest")
+                            OR do
+                            you have any outstanding wants or warrants? A Background Check is completed on all employees
+                            upon arrival to Yellowstone. (Note: Conviction of a crime is not an automatic ban to
+                            employment
+                            - circumstances will be considered.)
+                            <input class="form-check-input" type="radio" name="radio"
+                                   onclick="backgroundCheck('background')">Yes
+
+                            <input class="form-check-input" type="radio" name="radio"
+                                   onclick="backgroundCheck('background', true)">No
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="nav nav-tabs">
+            <!--            tabs-->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="personalInfo-tab" data-bs-toggle="tab"
+                        data-bs-target="#personalInfo-tab-pane" type="button" role="tab"
+                        aria-controls="personalInfo-tab-pane" aria-selected="true" tabindex="-1">Personal Information
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="positions-tab" data-bs-toggle="tab" data-bs-target="#positions-tab-pane"
+                        type="button" role="tab" aria-controls="positions-tab-pane" aria-selected="false">Positions
+                    Applied for
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="workExperience-tab" data-bs-toggle="tab"
+                        data-bs-target="#workExperience-tab-pane" type="button" role="tab"
+                        aria-controls="workExperience-tab-pane" aria-selected="false">Work Experience
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane"
+                        type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Education
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="generalInfo-tab" data-bs-toggle="tab"
+                        data-bs-target="#generalInfo-tab-pane" type="button" role="tab"
+                        aria-controls="generalInfo-tab-pane" aria-selected="false">General Information
+                </button>
+            </li>
+        </ul>
+        <!--            <div class="row g-5">-->
+        <div class="tab-content" id="myTabContent">
+            <!--    tab1-->
+            <div class="tab-pane fade active show" id="personalInfo-tab-pane" role="tabpanel"
+                 aria-labelledby="personalInfo-tab" tabindex="0">
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                        <!--                                first name-->
+                        <div class="col-sm-5">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <!--                                    onchange="confirmation_getName()">-->
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <!--                                middle initial-->
+                        <div class="col-sm-2">
+                            <label for="middleInitial" class="form-label">Middle Initial</label>
+                            <input type="text" class="form-control" id="middleInitial" placeholder="" value="">
+                        </div>
+                        <!--                                last name-->
+                        <div class="col-sm-5">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            <!--                                    onchange="confirmation_getName()">-->
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <!--                                email & phone-->
+                        <div class="col-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Phone number is required.
+                            </div>
+                        </div>
+
+                        <!--                                mailing address-->
+                        <div class="col-12">
+                            <label for="address" class="form-label">Mailing Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                            <div class="invalid-feedback">
+                                Please enter your mailing address.
+                            </div>
+                        </div>
+
+                        <!--                                city/state/zip-->
+                        <div class="col-md-4">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                City is required.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required="">
+                                <option value="">Choose...</option>
+                                <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required="">
+                                <option value="">Choose...</option>
+                                <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                    </div>
+                    <!--next button-->
+                    <div class="PD20" style="padding-top: 20px; padding-bottom: 20px">
+                        <button type="button" class="btn btn-primary" id="positions-next" onclick="positionsTab()">Next
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!--    /tab1-->
+
+            <!--    tab2-->
+            <div class="tab-pane fade" id="positions-tab-pane" role="tabpanel" aria-labelledby="positions-tab"
+                 tabindex="0">
+                <p>
+                    Please select the position(s) that you are applying for in order of preference.
+                    Asterisks (***) by a job position indicates that little or no experience needed.
+                    The letters D.L. indicates the position requires a valid Drivers License.
+                    If you desire an Internship, please select Internship as your first choice.
+
+                </p>
+                <!--                        first choice tab-->
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="firstchoice-tab" data-bs-toggle="tab"
+                           data-bs-target="#firstchoice-tab-pane" role="tab" aria-controls="firstchoice-tab-pane"
+                           aria-selected="true" href="#">First Choice</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="secondchoice-tab" data-bs-toggle="tab"
+                           data-bs-target="#secondchoice-tab-pane" role="tab" aria-controls="secondchoice-tab-pane"
+                           href="#">Second Choice</a>
+
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="thirdchoice-tab" data-bs-toggle="tab"
+                           data-bs-target="#thirdchoice-tab-pane" role="tab" aria-controls="thirdchoice-tab-pane"
+                           href="#">Third Choice</a>
+                    </li>
+                </ul>
+                <!--                        first choice tab content-->
+                <div class="tab-content" id="firstChoiceTabContent">
+                    <div class="tab-pane fade active show" id="firstchoice-tab-pane" role="tabpanel"
+                         aria-labelledby="firstchoice-tab" tabindex="0">
+                        <!--                        no experience needed job-->
+                        <div class="col-md-6">
+                            <label for="sel_first_experience" class="form-label">If you don't have any
+                                experience, please select </label>
+                            <select class="form-select firstchoice" id="sel_first_experience"
+                                    onchange="setChoice('firstchoice',this)">
+                            </select>
+                        </div>
+                        <!--                        jobs need drivers license-->
+                        <div class="col-md-6">
+                            <label for="sel_first_driverLicense" class="form-label">Otherwise if you have driver
+                                license, please select </label>
+                            <select class="form-select firstchoice" onchange="setChoice('firstchoice',this)"
+                                    id="sel_first_driverLicense">
+                            </select>
+                        </div>
+                        <!--                        other jobs-->
+                        <div class="col-md-6">
+                            <label for="sel_first_others" class="form-label">For other job positions, please
+                                select </label>
+                            <select class="form-select firstchoice" id="sel_first_others"
+                                    onchange="setChoice('firstchoice',this)">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--                /first choice tab-->
+
+                <!--                        second choice tab content-->
+                <div class="tab-content" id="secondChoiceTabContent">
+                    <div class="tab-pane fade show" id="secondchoice-tab-pane" role="tabpanel"
+                         aria-labelledby="secondchoice-tab" tabindex="0">
+                        <div class="col-md-6">
+                            <label for="sel_second_experience" class="form-label">If you don't have any
+                                experience, please select </label>
+                            <select class="form-select secondchoice" id="sel_second_experience"
+                                    onchange="setChoice('secondchoice',this)">
+                            </select>
+                        </div>
+                        <!--                        jobs need drivers license-->
+                        <div class="col-md-6">
+                            <label for="sel_second_driverLicense" class="form-label">Otherwise if you have
+                                driver license, please select </label>
+                            <select class="form-select secondchoice"
+                                    onchange="setChoice('secondchoice',this)" id="sel_second_driverLicense">
+                            </select>
+                        </div>
+                        <!--                        other jobs-->
+                        <div class="col-md-6">
+                            <label for="sel_second_others" class="form-label">For other job positions,
+                                please select </label>
+                            <select class="form-select secondchoice" id="sel_second_others"
+                                    onchange="setChoice('secondchoice',this)">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--                /second choice tab-->
+
+                <!--                        third choice tab content-->
+                <div class="tab-content" id="thirdChoiceTabContent">
+                    <div class="tab-pane fade show" id="thirdchoice-tab-pane" role="tabpanel"
+                         aria-labelledby="thirdchoice-tab" tabindex="0">
+                        <div class="col-md-6">
+                            <label for="sel_third_experience" class="form-label">If you don't have any
+                                experience, please select </label>
+                            <select class="form-select thirdchoice" id="sel_third_experience"
+                                    onchange="setChoice('thirdchoice',this)">
+                            </select>
+                        </div>
+                        <!--                        jobs need drivers license-->
+                        <div class="col-md-6">
+                            <label for="sel_third_driverLicense" class="form-label">Otherwise if you
+                                have driver license, please select </label>
+                            <select class="form-select thirdchoice"
+                                    onchange="setChoice('thirdchoice',this)"
+                                    id="sel_third_driverLicense">
+                            </select>
+                        </div>
+                        <!--                        other jobs-->
+                        <div class="col-md-6">
+                            <label for="sel_third_others" class="form-label">For other job positions,
+                                please select </label>
+                            <select class="form-select thirdchoice" id="sel_third_others"
+                                    onchange="setChoice('thirdchoice',this)">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--                /third choice tab-->
+
+                <br>
+                <ul>
+                    <p><b>Note:</b></p>
+                    <li>The Summer employment season ends near November 1st of each year. Please apply for a late
+                        October or early November end date if you are able to stay till the end of our season.
+                    </li>
+                    <li>
+                        Please give careful consideration to the dates of availability. Be sure to allow sufficient time
+                        to
+                        return to school or home at the end of the season. DATES WILL BECOME PART OF YOUR EMPLOYEE
+                        AGREEMENT
+                        IF HIRED!
+                    </li>
+                    <li>
+                        Would you accept a Server Assistant, Kitchen Crew, Cafeteria, Laundry, Food Service Attendant or
+                        Room Attendant position if those applied for are unavailable?
+                        <a>
+                            <input class="form-check-input" type="radio" name="radio" id="check_availableJob"></a>
+                        <label class="form-check-label" for="check_availableJob">
+                            Yes</label>
+
+                        <input class="form-check-input" type="radio" name="radio" id="uncheck_availableJob">
+                        <label class="form-check-label" for="uncheck_availableJob">
+                            No</label>
+                    </li>
+                </ul>
+
+                <p>If you have preferred start date and end date, please choose</p>
+                <div class="row g-3">
+                    <div class="col-sm-5">
+                        <label for="startDate">Start Date</label>
+                        <input type="text" class="form-control picker__input" id="startDate"
+                               readonly="">
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="endDate">End Date</label>
+                        <input type="text" class="form-control picker__input" id="endDate"
+                               readonly="">
+                    </div>
+                </div>
+                <!--next button-->
+                <div class="PD20" style="padding-top: 20px; padding-bottom: 20px">
+                    <button type="button" class="btn btn-primary" id="workExperience-next"
+                            onclick="workExperienceTab()">Next
+                    </button>
+                </div>
+            </div>
+            <!--    /tab2-->
+
+            <!--    tab3-->
+            <div class="tab-pane fade" id="workExperience-tab-pane" role="tabpanel" aria-labelledby="workExperience-tab"
+                 tabindex="0">
+                <p>Please start with most recent position.</p>
+                <div id="workexperiences">
+                    <div id="workexperience1" class="workexperience">
+                        <p><b>Employer #1</b></p>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstEmployerName" class="form-label">Employer Name</label>
+                                <input type="text" class="form-control" id="firstEmployerName" placeholder="" value=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    Valid employer name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="firstEmployerPhone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="firstEmployerPhone" placeholder=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    Phone number is required.
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="firstEmployerAddress" class="form-label">Street Address</label>
+                                <input type="text" class="form-control" id="firstEmployerAddress" placeholder=""
+                                       value=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    Street Address is required.
+                                </div>
+                            </div>
+                            <!--                                city/state/zip-->
+                            <div class="col-md-4">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="firstEmployercity" placeholder=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    City is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="firstEmployerState" class="form-label">State</label>
+                                <select class="form-select" id="firstEmployerState" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="firstEmployerZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="firstEmployerZip" placeholder=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    Zip code required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="firstEmployerCountry" class="form-label">Country</label>
+                                <select class="form-select" id="firstEmployerCountry" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="firstEmployerPosition" class="form-label">Position</label>
+                                <input type="text" class="form-control" id="firstEmployerPosition" placeholder=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    Position is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="firstEmployerSupervisor" class="form-label">Supervisor's Name and
+                                    Title</label>
+                                <input type="text" class="form-control" id="firstEmployerSupervisor" placeholder=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    Supervisor's name and title are required.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="firstEmployerStartDate">Start Date</label>
+                                <input type="text" class="form-control picker__input" id="firstEmployerStartDate"
+                                       readonly="">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="firstEmployerEndDate">End Date</label>
+                                <input type="text" class="form-control picker__input" id="firstEmployerEndDate"
+                                       readonly="">
+                            </div>
+
+                            <p>
+                                May we contact this employer?
+                                <a>
+                                    <input class="form-check-input" type="radio" name="radio"
+                                           id="yes_firstEmployerRadio"></a>
+                                <label class="form-check-label" for="yes_firstEmployerRadio">
+                                    Yes</label>
+
+                                <input class="form-check-input" type="radio" name="radio" id="no_firstEmployerRadio">
+                                <label class="form-check-label" for="no_firstEmployerRadio">
+                                    No</label>
+                            <div class="col-md-6">
+                                <label for="firstEmployerDuties" class="form-label">Specific Duties</label>
+                                <input type="text" class="form-control" id="firstEmployerDuties" placeholder=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    Specific duties are required.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="firstEmployerReason" class="form-label">Reason For Leaving</label>
+                                <input type="text" class="form-control" id="firstEmployerReason" placeholder=""
+                                       required="">
+                                <div class="invalid-feedback">
+                                    Reason for leaving is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="PD20" style="padding-top: 20px; padding-bottom: 20px">
+                    <button class="btn btn-primary" type="button" id="btnAddExperience" onclick="AddWorkExperience()">
+                        Add more employers
+                    </button>
+                </div>
+                <!--next button-->
+                <div class="PD20" style="padding-top: 20px; padding-bottom: 20px">
+                    <button type="button" class="btn btn-primary" id="education-next" onclick="educationTab()">Next
+                    </button>
+                </div>
+            </div>
+            <!--    /tab3-->
+
+            <!--        tab4-->
+            <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab"
+                 tabindex="0">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th scope="col">Name of School</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Degree Received</th>
+                        <th scope="col">Field of Study</th>
+                        <th scope="col">Graduate?</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableRow">
+                    <tr class="education">
+                        <td><input type="text" id="firstSchoolName" placeholder=""></td>
+                        <td><input type="text" id="firstSchoolLocation" placeholder=""></td>
+                        <td><input type="text" id="firstSchoolDegree" placeholder=""></td>
+                        <td><input type="text" id="firstSchoolField" placeholder=""></td>
+                        <td><a>
+                            <input class="form-check-input" type="radio" name="radio" id="check_graduation"></a>
+                            <label class="form-check-label" for="check_graduation">
+                                Yes</label>
+
+                            <input class="form-check-input" type="radio" name="radio" id="uncheck_graduation">
+                            <label class="form-check-label" for="uncheck_graduation">
+                                No</label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="PD20" style="padding-top: 20px; padding-bottom: 20px">
+                    <button class="btn btn-primary" type="button" id="btnAddSchool" onclick="AddMoreSchools()">
+                        Add More Schools
+                    </button>
+                </div>
+
+                <p>For Maintenance, Employee Recreation, Security, Marina, Vending, Transportation and all driving jobs.
+                    Do you have a current valid Driver's License?</p>
+                <a>
+                    <input class="form-check-input" type="radio" name="radio" id="check_driverLicense"
+                           data-bs-toggle="collapse" href="#collapseDriverLicense" aria-expanded="false"
+                           aria-controls="collapseDriverLicense"></a>
+                <label class="form-check-label" for="check_driverLicense">
+                    Yes</label>
+
+                <input class="form-check-input" type="radio" name="radio" id="uncheck_driverLicense">
+                <label class="form-check-label" for="uncheck_driverLicense">
+                    No</label>
+
+                <div class="collapse" id="collapseDriverLicense">
+                    <div class="card card-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label for="driverLicense" class="form-label">DL#</label>
+                                <input type="text" class="form-control" id="driverLicense" placeholder="">
+                            </div>
+                            <div class="col-md-5">
+                                <label for="dlType" class="form-label">Type</label>
+                                <input type="text" class="form-control" id="dlType" placeholder="">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="stateOfIssue" class="form-label">State of Issue</label>
+                                <input type="text" class="form-control" id="stateOfIssue" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6"><p>Additional School/Training/Special Skills</p>
+                        <input type="text" class="form-control" placeholder=""></div>
+
+                    <div class="col-sm-6">
+                        <p>Additional Info/Application Requests/Location Request</p>
+                        <input type="text" class="form-control" placeholder=""></div>
+                </div>
+                <!--next button-->
+                <div class="PD20" style="padding-top: 20px; padding-bottom: 20px">
+                    <button type="button" class="btn btn-primary" id="generalInfo-next" onclick="generalInfoTab()">Next
+                    </button>
+                </div>
+            </div>
+
+            <!--        tab5-->
+            <div class="tab-pane fade" id="generalInfo-tab-pane" role="tabpanel"
+                 aria-labelledby="generalInfo-tab"
+                 tabindex="0">
+                <div id="employeeInfo">
+                    <p>Have you ever worked for Xanterra Parks and Resorts, Amfac Park and Resorts, Fred Harvey or TWRS
+                        company?
+                        <input class="form-check-input" type="radio" name="radio"
+                               onclick="loadEmployeeInfo('employee')">Yes
+                        <input class="form-check-input" type="radio" name="radio"
+                               onclick="loadEmployeeInfo('employee', true)">No
+                    </p>
+                </div>
+
+                <div id="first_locationName">
+                    <p>Have you ever been employed under a different name with any Xanterra Parks and Resorts, Amfac
+                        Parks
+                        and Resorts, Fred Harvey or TWRS company?
+                        <input class="form-check-input" type="radio" name="radio" onclick="loadLocation('first')">Yes
+                        <input class="form-check-input" type="radio" name="radio"
+                               onclick="loadLocation('first',true)">No
+                    </p>
+
+                </div>
+
+                <div id="second_locationName">
+                    <p>Are you a spouse, dependent, relative, or Domestic Partner of a National Park Service employee?
+                        <input class="form-check-input" type="radio" name="radio" onclick="loadLocation('second')">Yes
+                        <input class="form-check-input" type="radio" name="radio"
+                               onclick="loadLocation('second', true)">No
+                    </p>
+                </div>
+                <p>For certain positions and certain reporting relationships, we are unable to employ family relatives.
+                    Please identify relative(s) currently employed by Xanterra Parks and Resorts, Amfac Park and
+                    Resorts, Fred Harvey or TWRS company.</p>
+                <input class="form-control">
+                <p>Applying with a friend or spouse? Please provide his or her FULL name:</p>
+                <input class="form-control">
+                <p>Are you traveling together?
+                    <input class="form-check-input" type="radio" name="radio">Yes
+                    <input class="form-check-input" type="radio" name="radio">No
+                </p>
+                <p>Do you want to work in the same location?
+                    <input class="form-check-input" type="radio" name="radio">Yes
+                    <input class="form-check-input" type="radio" name="radio">No
+                </p>
+
+                <p>
+                    If you are hired and meet housing requirements, please indicate your housing preference
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio" id="housingPreferDorm">
+                    <label class="form-check-label" for="housingPreferDorm">Dormitory (must be 18 years or older; no
+                        housing available for children or pets)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio" id="housingPreferRV">
+                    <label class="form-check-label" for="housingPreferRV">RV or Trailer (this is your own self contained
+                        vehicle; indicate model,year,length of RV or Trailer; space is limited)</label>
+                    <input class="form-control">
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio" id="housingPreferResident">
+                    <label class="form-check-label" for="housingPreferResident">Local Resident</label>
+                </div>
+                <p><b>Required:</b> You must be 18 years of age or older to live in employee housing. Will you be 18
+                    years of age or older when you arrive in Yellowstone?
+                    <input class="form-check-input" type="radio" name="radio">Yes
+                    <input class="form-check-input" type="radio" name="radio">No
+                </p>
+                <p><b>Required:</b> Employees must be 21 years of age or older for jobs requiring the operation of
+                    certain vehicles or serving alcohol in lounges/pubs. Are you 21 years of age or older?
+                    <input class="form-check-input" type="radio" name="radio">Yes
+                    <input class="form-check-input" type="radio" name="radio">No
+                </p>
+
+                <hr>
+                <h5>AGREEMENT TO TERMS: read carefully before submitting this application</h5>
+                <p>By submitting this form, I declare my answers to the questions on this application and any
+                    attachment, i.e. resume, etc., are true and accurate. Attachments CANNOT be sent with this online
+                    application. You must send attachments to us by e-mail or fax. FAX:(307) 344-5441 E-mail:
+                    info@yellowstonejobs.com. I authorize Xanterra Parks and Resorts and any accredited public or
+                    private investigative agency or individual conducting my background investigation to obtain and
+                    release any information relating to my background from individuals, schools, employers, criminal
+                    justice agencies, governmental agencies, financial institutions, credit bureaus, licensing agencies,
+                    or other sources of information in accordance with applicable laws for purposes of making a
+                    determination of my suitability or eligibility for employment. If employed, I understand that I must
+                    abide by the company's rules and regulations. I hereby consent to a drug screen as a condition of
+                    employment, if required. I understand this document, any offer of employment or any other employment
+                    related information does not constitute an employment contract. I understand employment is not a
+                    specified term and is at the mutual consent of the employee and company. Accordingly, either the
+                    employee or the company can terminate employment at will, with or without cause, at any time.</p>
+                <label class="form-check-label" for="agreement">If you have read, understand and agree to the above
+                    information, please check this box</label>
+                <input class="form-check-input" type="checkbox" id="agreement">
+
+                <div class="text-center" style="padding-top: 20px; padding-bottom: 20px">
+                    <button class="btn btn-primary" type="button" id="liveToastBtn">Submit</button>
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-body">
+                                Thanks for choosing yellowstone park!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--    footer-->
+    <hr>
+    <footer class="site-footer">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="mb-3 mb-md-0 text-muted">© 2022 Yellowstone National Park</span>
+            </div>
+
+            <div class="col-sm-4 text-center">
+                <button type="button" class="btn btn-light text-muted">Contact us</button>
+            </div>
+            <ul class="nav col-sm-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-twitter"
+                         viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a></li>
+                <li class="ms-3"><a class="text-muted" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                </a></li>
+                <li class="ms-3"><a class="text-muted" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-facebook"
+                         viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<!--    jquery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<!--    pickadate-->
+<script src="picker.js"></script>
+<script src="picker.date.js"></script>
+<!--    show next tab-->
+<script src="applicationForm.js"></script>
+</div>
+
+</body>
+</html>
